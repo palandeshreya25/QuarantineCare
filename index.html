@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quarantine Centre Tracker</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="top"><h1>Quarantine Centre</h1><span class="date" id="date"></span></div>
+  <nav id="nav"></nav>
+</header>
+<main id="app"></main>
+<script src="app.js"></script>
+<script>document.getElementById('date').textContent=new Date().toLocaleDateString([], {weekday:'short',day:'numeric',month:'short'});</script>
+</body>
+</html>
